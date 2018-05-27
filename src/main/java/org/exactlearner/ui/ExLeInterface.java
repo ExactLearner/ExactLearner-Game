@@ -453,9 +453,7 @@ public class ExLeInterface extends JFrame {
 
 		percentageSlider = new JLabel("50%");
 		percentageSlider.setBounds(676, 233, 46, 14);
-		contentPane.add(percentageSlider);
-		membQueries.setText(ontology.getCanonicalPath() + "");
-		equivQueries.setText(ontology.getAbsolutePath() + "");
+		contentPane.add(percentageSlider); 
 	}
 
 	public void equivalenceCheck() {
