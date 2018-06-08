@@ -45,10 +45,10 @@ public class LoadFromList extends JFrame {
 	 */
 	public LoadFromList() {
 		super();
-		ontologies.add("src\\main\\resources\\ontologies\\SMALL\\football.owl");
-		ontologies.add("src\\main\\resources\\ontologies\\SMALL\\university.owl");
-		ontologies.add("src\\main\\resources\\ontologies\\SMALL\\animals.owl");
-		ontologies.add("src\\main\\resources\\ontologies\\SMALL\\generations.owl");
+		ontologies.add("src/main/resources/ontologies/SMALL/football.owl");
+		ontologies.add("src/main/resources/ontologies/SMALL/university.owl");
+		ontologies.add("src/main/resources/ontologies/SMALL/animals.owl");
+		ontologies.add("src/main/resources/ontologies/SMALL/generations.owl");
 		
 		setTitle("ExactLearner - Load from list");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

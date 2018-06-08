@@ -167,7 +167,7 @@ public class ExLeInterface extends JFrame {
 			public void run() {
 				try {
 					ExLeInterface frame = new ExLeInterface(
-							new File("src\\main\\resources\\ontologies\\SMALL\\university.owl"));
+							new File("src/main/resources/ontologies/SMALL/university.owl"));
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -385,11 +385,16 @@ public class ExLeInterface extends JFrame {
 						helpThem.dispose();
 					}  
 					hypoFile.delete();
-		            		newFile.delete();
+		            		
 		            		historyData.clear();  
 		            		concepts.clear();
 		            		roles.clear(); 
-					(new ExLeInterface(targetFile)).setVisible(true);
+					try {
+						(new ExLeInterface(targetFile)).setVisible(true);
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 					dispose();
 				}
 				else {
