@@ -384,34 +384,34 @@ public class ExLeInterface extends JFrame {
 
 						helpThem.dispose();
 					}  
-
-					hypothesisArea.setText("");
-					learnButton.setEnabled(true);
-					answerLabel.setText("Ontology learned: --");
-					totalQueries.setText("Total number of queries: -- ");
-					membQueries.setText("No. of entailment queries: -- ");
-					equivQueries.setText("No. of equivalence queries: -- ");
-					initializeVariables();
+					hypoFile.delete();
+		            		newFile.delete();
+		            		historyData.clear();  
+		            		concepts.clear();
+		            		roles.clear(); 
+					(new ExLeInterface(targetFile)).setVisible(true);
+					dispose();
 				}
-				else if(
-					 (JOptionPane.showConfirmDialog(null, "Would you like to choose a different ontology?", "Alert!",JOptionPane.YES_NO_OPTION) == 0))
-					 {
-						if (historyThem != null) {
-							historyThem.dispose();
-						}
-						if (showThem != null) {
+				else {
+					elQueryEngineForT = null;
+					elQueryEngineForH = null;
 
-							showThem.dispose();
-						}
-						if (helpThem != null) {
+					elLearner = null;
+					elOracle = null;
+					if (historyThem != null) {
+						historyThem.dispose();
+					}
+					if (showThem != null) {
 
-							helpThem.dispose();
-						}  
-						 (new StartUILearner()).setVisible(true); 
-						 dispose();
-					 }
-					 else
-						 System.out.println("Keep learning then .. ");
+						showThem.dispose();
+					}
+					if (helpThem != null) {
+
+						helpThem.dispose();
+					}   
+					(new StartUILearner()).setVisible(true); 
+					dispose();
+				}
 			}
 		});
 		restartButton.setBounds(582, 394, 120, 23);
