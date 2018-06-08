@@ -867,6 +867,8 @@ public class ExLeInterface extends JFrame {
 
 			System.out.println("Trying to load targetOntology");
 			targetFile = new File(filePath);
+			myManager = OWLManager.createOWLOntologyManager();
+		
 			targetOntology = myManager.loadOntologyFromOntologyDocument(targetFile);
 
 			axiomsT = new HashSet<>();
