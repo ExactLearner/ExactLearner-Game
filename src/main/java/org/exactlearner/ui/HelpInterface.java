@@ -21,7 +21,7 @@ public class HelpInterface extends JFrame {
 	public JButton previousButton;
 	public JLabel imgLabel;
 	public int globalImg = 0;
-	String[] imgList = {"src\\main\\resources\\images\\helpEntailment.png",
+	String[] imgList = {"src/main/resources/images/helpEntailment.png",
 						"src/main/resources/images/helpDifficulty.png",
 						"src/main/resources/images/helpEquivalenceQuery.png",
 						"src/main/resources/images/helpHistoryRestart.png"
