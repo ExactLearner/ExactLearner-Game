@@ -859,6 +859,9 @@ public class ExLeInterface extends JFrame {
 		learnButton.setEnabled(false);
 		elQueryEngineForH = null;
 		elQueryEngineForT = null;
+		
+		JOptionPane.showMessageDialog(null, "You have learned the ontology!!!", "Success!",
+				JOptionPane.INFORMATION_MESSAGE);
 		myManager = OWLManager.createOWLOntologyManager();
 		myRenderer = new ManchesterOWLSyntaxOWLObjectRendererImpl();
 		myMetrics = new Metrics(myRenderer);
