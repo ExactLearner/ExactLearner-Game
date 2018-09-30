@@ -76,6 +76,7 @@ public class ShowVocabulary extends JFrame {
 		contentPane.add(scrollPane);
 		
 		JTextArea textArea = new JTextArea();
+		textArea.setEditable(false);
 		scrollPane.setViewportView(textArea);
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
@@ -83,6 +84,7 @@ public class ShowVocabulary extends JFrame {
 		contentPane.add(scrollPane_1);
 		
 		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setEditable(false);
 		scrollPane_1.setViewportView(textArea_1);
 		for (int i=0; i<concepts.size();i++){
 
